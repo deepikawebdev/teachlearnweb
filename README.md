@@ -1,0 +1,3 @@
+# teachlearnweb
+Teach Learn Web primarily focus on blending their existing desktop systems into a seamless web application helpful for students to learn and master their skills primarily in Math and Science. It consists of <br>Learning Management System - An application primarily focused on providing the learning solutions through a unique combination of Videos, Presentations, Lesson Notes and Concept Maps.<br>
+                        Assessment Management System - An application primarily focused on evaluating and reporting student’s academic learning as well as their skills that help in better learning.<br> Technologies used: Ajax 1.0, JQuery, HTML 4.0, CSS 2.0, Java Script, KanDoUI.  
