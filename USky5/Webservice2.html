@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Ip2country</title>
+    <SCRIPT language="JavaScript">
+        var callID = 0;
+        function getWSDL()
+        {
+            myWebService.useService(
+                "http://www.taryatechnologies.com/ws/IP2countryws.asmx?WSDL",
+                "IP2Country");
+        }
+        function getResult()
+        {
+            country.innerText = event.result.value;
+        }
+        function Lookup()
+        {
+            callID = myWebService.IP2Country.callService("getCountry", txtIP.value);
+        }
+    </SCRIPT>
+</head>
+<body onload="getWSDL()">
+    <h1>Consuming a webservice by HTML Page</h1>
+    <div id="myWebService" style="behavior:url(webservice.htc)"
+        onresult="getResult()"></div>
+    IPnumber: <input id="txtIP">
+    <input Type="Button" Value="getCountry!" OnClick="Lookup()">
+    Country:<span id="country"> </span>
+</body>
+</html>
